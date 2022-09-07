@@ -1,0 +1,33 @@
+{
+  "name": "vendor_name/paulojacinto",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Guilherme Santos",
+      "email": "guiisanttos510@gmail.com",
+      "role": "developer"
+    }
+  ],
+  "config": {
+    "vendor-dir": "vendor"
+  },
+  "autoload": {
+    "psr-4": {
+      "Source\\": "source/"
+    },
+    "files": [
+      "source/Boot/Config.php",
+      "source/Boot/Helpers.php"
+    ]
+  },
+  "require": {
+    "ext-pdo": "*",
+    "ext-json": "*",
+    "ext-mbstring": "*",
+    "coffeecode/optimizer": "2.*.*",
+    "league/plates": "3.*.*",
+    "coffeecode/router": "1.*.*"
+  }
+}
